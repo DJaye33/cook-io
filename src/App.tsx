@@ -1,13 +1,13 @@
-import { AppContainer, TopNavigation } from "./components";
+import { MainContainer, TopNavigation } from "./components";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <AppContainer>
-        <TopNavigation />
-      </AppContainer>
+      <TopNavigation />
+      <hr />
+      <MainContainer>main section</MainContainer>
     </>
   );
 }

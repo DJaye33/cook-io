@@ -1,2 +1,2 @@
-export { default as AppContainer } from "./AppContainer/AppContainer";
+export { default as MainContainer } from "./MainContainer/MainContainer";
 export { default as TopNavigation } from "./Navigation/TopNavigation";
