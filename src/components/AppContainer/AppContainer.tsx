@@ -3,7 +3,7 @@ type AppContainerProps = {
 };
 
 const appContainer = ({ children }: AppContainerProps) => {
-  return <div>{children}</div>;
+  return <div className="xl:w-[1280px] xl:mx-auto">{children}</div>;
 };
 
 export default appContainer;
