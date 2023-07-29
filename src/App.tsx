@@ -1,4 +1,4 @@
-import { MainContainer, TopNavigation } from "./components";
+import { TopNavigation, Divider, MainContainer } from "./components";
 
 import "./App.css";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <TopNavigation />
-      <hr />
+      <Divider />
       <MainContainer>main section</MainContainer>
     </>
   );
