@@ -1,40 +1,37 @@
-import { BarsArrowUpIcon, UsersIcon } from "@heroicons/react/20/solid";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const HeaderInputGroup = () => {
   return (
-    <div>
-      <h1>Your desired dish?</h1>
-      <div>
-        <label
-          htmlFor="search"
-          className="block text-sm font-medium leading-6 text-gray-900"
-        ></label>
+    <div className="text-white text-center w-full lg:w-[800px] lg:mx-auto">
+      <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl">
+        Your desired dish?
+      </h1>
+      <div className="my-4">
+        <label htmlFor="search"></label>
         <div className="mt-2 flex rounded-md shadow-sm">
           <div className="relative flex flex-grow items-stretch focus-within:z-10">
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <UsersIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-            </div>
             <input
               type="search"
               name="search"
               id="search"
-              className="block w-full rounded-none rounded-l-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="John Smith"
+              className="block w-full bg-orange-50 rounded-none rounded-l-md border-0 pl-5 pr-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+              placeholder="Search recipes..."
             />
           </div>
           <button
             type="button"
-            className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+            className="bg-orange-600 flex justify-center items-center rounded-r-md px-3 py-2 hover:bg-orange-500 h-10 w-16 md:h-12 md:w-20 lg:h-16 lg:w-28"
           >
-            <BarsArrowUpIcon
-              className="-ml-0.5 h-5 w-5 text-gray-400"
+            <MagnifyingGlassIcon
+              className="-ml-0.5 h-6 w-6 text-white"
               aria-hidden="true"
             />
-            Sort
           </button>
         </div>
       </div>
-      <p>Search any recipe e.g: burger, pizza, sandwich, toast.</p>
+      <p className="text-xs">
+        Search any recipe e.g: burger, pizza, sandwich, toast.
+      </p>
     </div>
   );
 };
