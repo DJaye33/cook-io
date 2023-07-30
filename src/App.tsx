@@ -1,14 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TopNavigation, Divider, MainContainer } from "./components";
+import { TopNavigation, Divider } from "./components";
+
+import { HomePage, RecipesPage, DetailsPage, SavedRecipes } from "./components";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <TopNavigation />
-      <Divider />
-      <MainContainer>main section</MainContainer>
+      <BrowserRouter>
+        <TopNavigation />
+        <Divider />
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/recipes" element={<RecipesPage />}></Route>
+          <Route path="/details" element={<DetailsPage />}></Route>
+          <Route path="/saved-recipes" element={<SavedRecipes />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
