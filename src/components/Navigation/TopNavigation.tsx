@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BookmarkSquareIcon } from "@heroicons/react/24/outline";
 import logoLight from "/logo-light.svg";
 
@@ -8,12 +8,18 @@ const TopNavigation = () => {
       {/* {FIXME: CONVERT ALL A TAGS TO REACT ROUTER LINK & MAY NEED TO BE OWN COMPONENT FOR DARK AND LIGHT THEME VERSIONS OF LOGO} */}
       <img src={logoLight} alt="cook.io home" />
       <nav className="hidden xl:flex items-center justify-between w-40">
-        <Link to="/" className="hover:font-bold hover:text-black">
+        <NavLink
+          to="/"
+          className="aria-[current=page]:text-orange-600 aria-[current=page]:font-bold"
+        >
           Home
-        </Link>
-        <Link to="/recipes" className="hover:font-bold hover:text-black">
+        </NavLink>
+        <NavLink
+          to="/recipes"
+          className="aria-[current=page]:text-orange-600 aria-[current=page]:font-bold"
+        >
           Recipes
-        </Link>
+        </NavLink>
       </nav>
       <Link
         to="/saved-recipes"
