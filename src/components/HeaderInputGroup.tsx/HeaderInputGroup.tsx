@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const HeaderInputGroup = () => {
@@ -18,7 +19,8 @@ const HeaderInputGroup = () => {
               placeholder="Search recipes..."
             />
           </div>
-          <button
+          <Link
+            to="/recipes"
             type="button"
             className="bg-orange-600 flex justify-center items-center rounded-r-md px-3 py-2 hover:bg-orange-500 h-10 w-16 md:h-12 md:w-20 lg:h-16 lg:w-28"
           >
@@ -26,7 +28,7 @@ const HeaderInputGroup = () => {
               className="-ml-0.5 h-6 w-6 text-white"
               aria-hidden="true"
             />
-          </button>
+          </Link>
         </div>
       </div>
       <p className="text-xs">

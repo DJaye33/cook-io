@@ -1,10 +1,10 @@
-import { MainContainer } from "..";
+import { Container } from "..";
 
 const DetailsPage = () => {
   return (
-    <MainContainer>
+    <Container>
       <h1>This is the Details page</h1>
-    </MainContainer>
+    </Container>
   );
 };
 

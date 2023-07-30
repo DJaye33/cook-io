@@ -1,10 +1,10 @@
-import { MainContainer } from "..";
+import { Container } from "..";
 
 const SavedRecipes = () => {
   return (
-    <MainContainer>
+    <Container>
       <h1>This is the saved recipes page</h1>
-    </MainContainer>
+    </Container>
   );
 };
 

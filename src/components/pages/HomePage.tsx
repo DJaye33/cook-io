@@ -1,11 +1,12 @@
-import { MainContainer } from "..";
+import { Container } from "..";
 import Header from "../Header/Header";
 
 const HomePage = () => {
   return (
-    <MainContainer>
+    <Container>
       <Header />
-    </MainContainer>
+      <Container isInnerContainer></Container>
+    </Container>
   );
 };
 
