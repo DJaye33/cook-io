@@ -3,7 +3,7 @@ type MainContainerProps = {
 };
 
 const MainContainer = ({ children }: MainContainerProps) => {
-  return <main className="xl:w-[1280px] xl:mx-auto">{children}</main>;
+  return <main className="p-4 xl:w-[1280px] xl:mx-auto">{children}</main>;
 };
 
 export default MainContainer;

@@ -1,9 +1,10 @@
 import { MainContainer } from "..";
+import Header from "../Header/Header";
 
 const HomePage = () => {
   return (
     <MainContainer>
-      <h1>This is the home page</h1>
+      <Header />
     </MainContainer>
   );
 };

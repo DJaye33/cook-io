@@ -4,8 +4,7 @@ import logoLight from "/logo-light.svg";
 
 const TopNavigation = () => {
   return (
-    <div className="flex items-center justify-center xl:justify-between py-6 max-w-[1280px] lg:mx-auto">
-      {/* {FIXME: CONVERT ALL A TAGS TO REACT ROUTER LINK & MAY NEED TO BE OWN COMPONENT FOR DARK AND LIGHT THEME VERSIONS OF LOGO} */}
+    <div className="flex items-center justify-center xl:justify-between py-6 lg:px-9 max-w-[1280px] lg:mx-auto">
       <img src={logoLight} alt="cook.io home" />
       <nav className="hidden xl:flex items-center justify-between w-40">
         <NavLink
